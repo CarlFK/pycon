@@ -56,6 +56,7 @@ urlpatterns = patterns("",
         url(r"^venue/share-room/", direct_to_template, {"template": "venue/share_room.html"}, name="share_room"),
         
         url(r"^registration/", include("registration.urls")),
+        url(r"^letters/", include("letters.urls")),
         url(r"^boxes/", include("boxes.urls")),
         
         url(r"^", include("wakawaka.urls")),

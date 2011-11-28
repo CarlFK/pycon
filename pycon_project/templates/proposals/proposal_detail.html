@@ -18,6 +18,10 @@
         {% endif %}
     </p>
     
+    <p>
+        <a href="{% url mk_pdf 'recommendation' proposal.pk %}/letter.pdf">letter.pdf</a>
+    </p>
+
     <div>
         {{ proposal.description }}
     </div>
